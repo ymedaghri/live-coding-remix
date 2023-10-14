@@ -1,9 +1,9 @@
-import IconDashboard from "../svg/dashboard";
+import IconDashboard from "../svg/dashboard"
 
 export default function RoundedIconDashboard() {
   return (
-    <div className="bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block">
+    <div className="my-4 inline-block cursor-pointer rounded-lg bg-gray-100 p-3 hover:bg-gray-200">
       <IconDashboard />
     </div>
-  );
+  )
 }

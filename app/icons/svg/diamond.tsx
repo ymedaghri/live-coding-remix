@@ -3,8 +3,9 @@ export default function IconDiamond(props: any) {
     <svg
       viewBox="0 0 21 21"
       fill="currentColor"
-      height={props.size || "20px"}
-      width={props.size || "20px"}
+      height="20px"
+      width="20px"
+      {...props}
     >
       <g
         fill="none"
@@ -17,5 +18,5 @@ export default function IconDiamond(props: any) {
         <path d="M5.509 4L7.5 8l3-4 3 4 2-4" />
       </g>
     </svg>
-  );
+  )
 }
