@@ -4,7 +4,7 @@ import {
   Meta,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from "@remix-run/react"
 
 export default function Document({ children }: any) {
   return (
@@ -15,7 +15,7 @@ export default function Document({ children }: any) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-gray-100 min-h-screen">
+      <body className="min-h-screen bg-gray-100">
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -23,5 +23,5 @@ export default function Document({ children }: any) {
         {/*process.env.NODE_ENV === "development" && <LiveReload />*/}
       </body>
     </html>
-  );
+  )
 }

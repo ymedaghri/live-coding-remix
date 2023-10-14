@@ -4,5 +4,5 @@ export default function Header() {
       <h2>Dashboard</h2>
       <h2>Welcome back Youssef</h2>
     </div>
-  );
+  )
 }

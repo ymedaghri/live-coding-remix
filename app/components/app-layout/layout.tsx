@@ -1,5 +1,5 @@
-import Header from "./header";
-import Sidebar from "./sidebar";
+import Header from "./header"
+import Sidebar from "./sidebar"
 
 export default function Layout({ children }: any) {
   return (
@@ -9,5 +9,5 @@ export default function Layout({ children }: any) {
         {children}
       </Sidebar>
     </>
-  );
+  )
 }

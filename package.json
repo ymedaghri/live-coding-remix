@@ -11,7 +11,12 @@
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
   },
-  "prettier": {},
+  "prettier": {
+    "semi": false,
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  },
   "eslintIgnore": [
     "/node_modules",
     "/build",
