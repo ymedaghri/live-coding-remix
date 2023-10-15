@@ -26,7 +26,7 @@ export default function Sidebar({ children }: any) {
             <Link to="/settings">
               <RoundedIconSettings />
             </Link>
-            <Link to="/github-repositories/ymedaghri">
+            <Link prefetch="render" to="/github-repositories/ymedaghri">
               <RoundedIconGitHub />
             </Link>
           </div>

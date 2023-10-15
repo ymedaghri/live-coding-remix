@@ -7,31 +7,32 @@ import {
   Title,
   Tooltip,
   Legend,
-} from 'chart.js'
+} from "chart.js"
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
-
-
-export default function BarChart({ labels, values, dataLabel, title }: { labels: string[], values: number[], dataLabel: string, title?: string }) {
+export default function BarChart({
+  labels,
+  values,
+  dataLabel,
+  title,
+}: {
+  labels: string[]
+  values: number[]
+  dataLabel: string
+  title?: string
+}) {
   const options = {
     responsive: true,
     scales: {
       y: {
         beginAtZero: true,
         max: 100,
-      }
+      },
     },
     plugins: {
       legend: {
-        position: 'top' as const,
+        position: "top" as const,
       },
       title: {
         display: title ? true : false,
@@ -46,12 +47,10 @@ export default function BarChart({ labels, values, dataLabel, title }: { labels:
       {
         label: dataLabel,
         data: values,
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
       },
     ],
-  };
+  }
 
-  return (
-    <Bar data={data} options={options} />
-  )
+  return <Bar data={data} options={options} />
 }
