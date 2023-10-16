@@ -4,6 +4,7 @@ import RoundedIconDashboard from "~/icons/rounded/roundedDashBoard"
 import RoundedIconPerson from "~/icons/rounded/roundedPerson"
 import RoundedIconSettings from "~/icons/rounded/roundedSettings"
 import RoundedIconGitHub from "~/icons/rounded/roundedGitHub"
+import RoundedIconJira from "~/icons/rounded/roundedJira"
 
 export default function Sidebar({ children }: any) {
   return (
@@ -23,8 +24,8 @@ export default function Sidebar({ children }: any) {
             <Link to="/customers">
               <RoundedIconPerson />
             </Link>
-            <Link to="/settings">
-              <RoundedIconSettings />
+            <Link to="/lead-time-for-change">
+              <RoundedIconJira />
             </Link>
             <Link prefetch="render" to="/github-repositories/ymedaghri">
               <RoundedIconGitHub />
